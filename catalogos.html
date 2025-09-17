@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogos</title>
+    <!-- Incluir los archivos CSS de Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Iconos de Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ96W+62BqU+6d+5gN6+i+h66p+g+44k+I+8L+45A+o+t+pA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Estilos personalizados -->
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .main-content {
+        flex: 1;
+      }
+      .footer {
+        flex-shrink: 0;
+      }
+      .navbar-toggler:focus,
+      .navbar-toggler:active {
+        outline: none; /* Elimina el borde que aparece al hacer clic o al enfocar */
+        box-shadow: none; /* Elimina la sombra de foco que puede ser de color azul */
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Menú de Navegación (Header) -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container">
+        <!-- Logotipo de la empresa -->
+
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/invinox.png"
+            alt="Logotipo de la empresa"
+            class="d-inline-block align-text-top me-2"
+            style="max-width: 180px; height: auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#seccion_quienes_somos"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalogos.html">Catálogos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#seccion_servicios"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#seccion_contacto"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav d-lg-flex flex-row mt-3 mt-lg-0 ms-lg-4">
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#"
+                ><i class="fab fa-facebook-f fa-1x"></i
+              ></a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#"
+                ><i class="fab fa-twitter fa-1x"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fab fa-instagram fa-1x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+      <div class="container py-5">
+        <h1 class="fw-bold text-center mb-5">Nuestros Catálogos</h1>
+        <span id="seccion_mobiliario" class="d-block mb-5">&nbsp;</span>
+        <!-- Sección de Catálogos de Desarrollo Web -->
+        <h2 class="fw-bold mb-4">Catálogos de mobiliario</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+          <!-- Tarjeta 1: E-commerce -->
+          <div class="col">
+            <div class="card h-100 shadow-sm rounded-0">
+              <img
+                src="images/servicio_mobiliario.png"
+                class="card-img-top rounded-0"
+                alt="Catálogo de E-commerce"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Catálogo 2025</h5>
+                <p class="card-text">
+                  Explora nuestros proyectos de tiendas en línea, diseñadas para
+                  vender con estilo y eficiencia. Descubre cómo maximizamos la
+                  conversión y la experiencia del cliente.
+                </p>
+                <a href="#" class="btn btn-outline-dark mt-3 rounded-0"
+                  >Descargar</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 2: Sitios Corporativos -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://via.placeholder.com/400x300?text=Corporativo+Catálogo"
+                class="card-img-top rounded-0"
+                alt="Catálogo de Sitios Corporativos"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">
+                  Catálogo de Sitios Corporativos
+                </h5>
+                <p class="card-text">
+                  Una colección de nuestros mejores trabajos en sitios web
+                  corporativos. Conoce cómo creamos plataformas que reflejan la
+                  identidad de marca y comunican con profesionalidad.
+                </p>
+                <a href="#" class="btn btn-outline-dark mt-3 rounded-0"
+                  >Descargar</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 3: Aplicaciones Web -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://via.placeholder.com/400x300?text=Aplicaciones+Catálogo"
+                class="card-img-top"
+                alt="Catálogo de Aplicaciones Web"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Catálogo de Aplicaciones Web</h5>
+                <p class="card-text">
+                  Revisa las aplicaciones web interactivas que hemos
+                  desarrollado. Desde herramientas internas hasta plataformas
+                  personalizadas, mostramos la funcionalidad y la innovación de
+                  nuestro trabajo.
+                </p>
+                <a href="#" class="btn btn-outline-dark mt-3 rounded-0"
+                  >Descargar</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de Catálogos de Diseño UX/UI -->
+        <h2 id="seccion_menaje" class="fw-bold mb-4">Catálogos de menaje</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+          <!-- Tarjeta 1: UX/UI Mobile -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="images/catalogo_menaje_1.png"
+                class="card-img-top"
+                alt="Catálogo de UX/UI Mobile"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Catálogo BONNA 2050</h5>
+                <p class="card-text">
+                  Especializados en la creación de experiencias móviles fluidas
+                  e intuitivas. Descubre cómo diseñamos interfaces que cautivan
+                  a los usuarios en sus dispositivos móviles.
+                </p>
+                <a href="#" class="btn btn-outline-dark mt-3 rounded-0"
+                  >Descargar</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 2: UX/UI Desktop -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="images/catalogo_menaje_2.png"
+                class="card-img-top"
+                alt="Catálogo de UX/UI Desktop"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Catálogo DKRISTAL</h5>
+                <p class="card-text">
+                  Mira nuestros proyectos de diseño UX/UI para escritorio. Nos
+                  enfocamos en la usabilidad y la estética para crear productos
+                  digitales que se adaptan perfectamente a pantallas grandes.
+                </p>
+                <a href="#" class="btn btn-outline-dark mt-3 rounded-0"
+                  >Descargar</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de Catálogos de Marketing Digital -->
+        <h2 id="seccion_afilado" class="fw-bold mb-4">Servicios de afilado</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+          <!-- Tarjeta 1: Campañas SEO -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="images/servicio_afilado.png"
+                class="card-img-top"
+                alt="Catálogo de SEO"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Afilado de cuchillos</h5>
+                <p class="card-text">
+                  El afilado de cuchillos para profesionales de la hostelería es
+                  una habilidad esencial que asegura cortes precisos y seguros.
+                  Un cuchillo bien mantenido incrementa la eficiencia y reduce
+                  el riesgo de accidentes en la cocina.
+                </p>
+                <a
+                  href="index.html#seccion_contacto"
+                  class="btn btn-outline-dark mt-3 rounded-0"
+                  >Contactar</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Tarjeta 2: Social Media Marketing -->
+          <div class="col">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="images/afilado_discos.png"
+                class="card-img-top"
+                alt="Catálogo de Social Media Marketing"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Afilado de discos de corte</h5>
+                <p class="card-text">
+                  Afilar regularmente los discos de corte es esencial para la
+                  eficiencia y seguridad. Mantiene la precisión, prolonga la
+                  vida útil de la herramienta y asegura acabados limpios,
+                  mejorando el rendimiento industrial.
+                </p>
+                <a
+                  href="index.html#seccion_contacto"
+                  class="btn btn-outline-dark mt-3 rounded-0"
+                  >Contactar</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="footer bg-dark text-white py-4 mt-auto">
+      <div class="container">
+        <div class="row text-center">
+          <!-- Columna 1: Copyright -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <p>&copy; 2024 INVINOX</p>
+          </div>
+          <!-- Columna 2: Enlaces Legales -->
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h5 class="fw-normal">Información Legal</h5>
+            <ul class="list-unstyled text-white">
+              <li>
+                <a href="#" class="fw-light text-white text-decoration-none"
+                  >Aviso Legal</a
+                >
+              </li>
+              <li>
+                <a href="#" class="fw-light text-white text-decoration-none"
+                  >Política de Privacidad</a
+                >
+              </li>
+              <li>
+                <a href="#" class="fw-light text-white text-decoration-none"
+                  >Términos de Servicio</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Columna 3: Redes Sociales -->
+          <div class="col-md-4">
+            <h5 class="fw-normal">Puedes vernos en</h5>
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li class="me-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-facebook-f fa-2x"></i
+                ></a>
+              </li>
+              <li class="me-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-twitter fa-2x"></i
+                ></a>
+              </li>
+              <li class="me-3">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-instagram fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Incluir los archivos JavaScript de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9e+HVB5e+5tL1PUEA9hFz/yB+QjH3A1rS+2gB+AL4s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

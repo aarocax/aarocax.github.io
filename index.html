@@ -50,6 +50,17 @@
         outline: none; /* Elimina el borde que aparece al hacer clic o al enfocar */
         box-shadow: none; /* Elimina la sombra de foco que puede ser de color azul */
       }
+      /* Nueva regla para evitar que los encabezados queden detrás del menú fijo */
+      .container[id] {
+        scroll-margin-top: 8rem;
+      }
+      /* Estilo para los bloques de servicio como enlaces */
+      .feature-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        transition: background-color 0.3s ease;
+      }
     </style>
   </head>
   <body>
@@ -83,13 +94,16 @@
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Catálogos</a>
+              <a class="nav-link" href="index.html#seccion_quienes_somos">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
+              <a class="nav-link" href="catalogos.html">Catálogos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="index.html#seccion_servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#seccion_contacto">Contacto</a>
             </li>
           </ul>
           <ul class="navbar-nav d-lg-flex flex-row mt-3 mt-lg-0 ms-lg-4">
@@ -117,7 +131,7 @@
     <main class="main-content">
       <!-- Banner Principal (Jumbotron) -->
       <div
-        class="p-5 mb-4 bg-light rounded-0 text-center"
+        class="p-5 bg-light rounded-0 text-center mb-5"
         style="
           background-image: url('images/invinox2.png');
           background-size: cover;
@@ -127,7 +141,7 @@
         "
       >
         <div class="container-fluid py-5">
-          <h1 class="display-4 text-center">¡Bienvenido a nuestro sitio!</h1>
+          <h1 class="display-4 text-center">¡Bienvenido a Invinox!</h1>
           <p class="lead col-md-8 fs-4 mx-auto">
             Explora nuestros servicios y descubre lo que podemos hacer por ti.
           </p>
@@ -138,7 +152,7 @@
       </div>
 
       <!-- Módulo de Eslogan de Marca -->
-      <div class="container py-5">
+      <div class="container py-5 mb-5">
         <div class="row">
           <div class="col-md-8 mx-auto text-center">
             <h2 class="display-6 fw-light fst-italic">
@@ -149,7 +163,7 @@
       </div>
 
       <!-- Módulo "Quiénes somos" -->
-      <div class="container py-5">
+      <div id="seccion_quienes_somos" class="container py-5 mb-5">
         <div class="row">
           <div class="col-md-8 mx-auto text-center">
             <h2 class="fw-bold">Quiénes somos</h2>
@@ -165,26 +179,31 @@
       </div>
 
       <!-- Módulo de bloques alternados -->
-      <div class="container py-5">
+      <div id="seccion_servicios" class="container py-5 mb-5">
         <h2 class="fw-bold text-center mb-5">Nuestros Servicios</h2>
 
         <!-- Bloque 1: Imagen a la izquierda, Texto a la derecha -->
+
         <div class="row feature-block align-items-center mb-5">
           <div class="col-md-6 mb-3 mb-md-0">
             <img
-              src="https://picsum.photos/600/400"
+              src="images/servicio_mobiliario.png"
               alt="Descripción del servicio 1"
               class="img-fluid"
             />
           </div>
           <div class="col-md-6">
-            <h3 class="fw-bold">Desarrollo Web</h3>
+            <h3 class="fw-bold">Mobiliario</h3>
             <p>
-              Creamos sitios web modernos y funcionales, optimizados para una
-              experiencia de usuario excepcional. Utilizamos las últimas
-              tecnologías para garantizar un rendimiento superior y una alta
-              seguridad.
+              Impulsa tu negocio con nuestro mobiliario de hostelería de alta
+              calidad. Ofrecemos soluciones elegantes y duraderas, diseñadas
+              para crear ambientes acogedores y funcionales. Transforma tu
+              espacio con piezas que combinan diseño, confort y un estilo
+              inigualable.
             </p>
+            <a href="catalogos.html#seccion_mobiliario" class="btn btn-outline-dark mt-3 rounded-0"
+              >Ver catálogos</a
+            >
           </div>
         </div>
 
@@ -192,19 +211,22 @@
         <div class="row feature-block align-items-center mb-5">
           <div class="col-md-6 order-md-2 mb-3 mb-md-0">
             <img
-              src="https://picsum.photos/600/400"
+              src="images/servicio_menaje.png"
               alt="Descripción del servicio 2"
               class="img-fluid"
             />
           </div>
           <div class="col-md-6 order-md-1">
-            <h3 class="fw-bold">Diseño UX/UI</h3>
+            <h3 class="fw-bold">Menaje</h3>
             <p>
-              Diseñamos interfaces intuitivas y atractivas que mejoran la
-              interacción del usuario. Nuestro enfoque está en la usabilidad y
-              la estética para crear productos digitales que los usuarios
-              adoren.
+              Descubre nuestra exclusiva selección de menaje. Ofrecemos calidad
+              y diseño para transformar tu cocina y mesa en espacios únicos.
+              Encuentra desde utensilios funcionales hasta vajillas elegantes
+              que reflejan tu estilo.
             </p>
+            <a href="catalogos.html#seccion_menaje" class="btn btn-outline-dark mt-3 rounded-0"
+              >Ver catálogos</a
+            >
           </div>
         </div>
 
@@ -212,18 +234,22 @@
         <div class="row feature-block align-items-center mb-5">
           <div class="col-md-6 mb-3 mb-md-0">
             <img
-              src="https://picsum.photos/600/400"
+              src="images/servicio_afilado.png"
               alt="Descripción del servicio 3"
               class="img-fluid"
             />
           </div>
           <div class="col-md-6">
-            <h3 class="fw-bold">Marketing Digital</h3>
+            <h3 class="fw-bold">Afilado profesional</h3>
             <p>
-              Implementamos estrategias de marketing digital efectivas para
-              aumentar tu visibilidad en línea. Desde SEO hasta gestión de redes
-              sociales, te ayudamos a conectar con tu audiencia.
+              Implementamos estrategias de afilado profesional para garantizar
+              que tus herramientas y utensilios estén siempre en óptimas
+              condiciones. Nuestro servicio se enfoca en la precisión y la
+              calidad para ofrecerte resultados excepcionales.
             </p>
+            <a href="catalogos.html#seccion_afilado" class="btn btn-outline-dark mt-3 rounded-0"
+              >Ver catálogos</a
+            >
           </div>
         </div>
       </div>
@@ -283,7 +309,7 @@
       </div>
 
       <!-- Módulo de Formulario de Contacto -->
-      <div class="container py-5">
+      <div id="seccion_contacto" class="container py-5 mb-5">
         <div class="row justify-content-center">
           <div class="col-md-8">
             <h2 class="fw-bold text-center mb-4">Contacta con nosotros</h2>
@@ -334,28 +360,7 @@
         </div>
       </div>
 
-      <!-- Módulo de Información de Contacto -->
-
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="display-4 text-center">
-              Contenido Principal de la Página
-            </h1>
-            <p class="lead text-center">
-              Aquí puedes colocar el contenido específico de tu sitio web.
-            </p>
-            <hr class="my-4" />
-            <p>
-              Este es el espacio donde irán los componentes como carruseles,
-              tarjetas, formularios, y cualquier otro elemento interactivo. La
-              maquetación de Bootstrap asegura que todo se adapte correctamente
-              a diferentes tamaños de pantalla.
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
+      
 
     <!-- Pie de Página (Footer) -->
     <footer class="footer bg-dark text-white py-4 mt-auto">
